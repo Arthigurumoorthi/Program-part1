@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Demo1">
+<test name="DDDD">
+<groups>
+<run>
+<include name="Apple"/>
+<include name="redme"/>
+</run>
+</groups>
+<classes>
+<class name="testng.Grouping">
+</class>
+</classes>
+</test>
+</suite>

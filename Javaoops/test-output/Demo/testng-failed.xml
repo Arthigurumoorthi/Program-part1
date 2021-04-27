@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Demo1(failed)">
+    <classes>
+      <class name="javado.Methodoverloading">
+        <methods>
+          <include name="log"/>
+          <include name="log3"/>
+          <include name="log1"/>
+        </methods>
+      </class> <!-- javado.Methodoverloading -->
+    </classes>
+  </test> <!-- Demo1(failed) -->
+</suite> <!-- Failed suite [Demo] -->

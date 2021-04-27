@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Login]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" name="Correctpw(failed)" verbose="2">
+    <parameter name="Username" value="noda"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="script.Correctpw">
+        <methods>
+          <include name="loginwithcorrectpw"/>
+        </methods>
+      </class> <!-- script.Correctpw -->
+    </classes>
+  </test> <!-- Correctpw(failed) -->
+  <test thread-count="5" name="Correctun(failed)" verbose="2">
+    <parameter name="Username" value="sylix"/>
+    <parameter name="Password" value="hello"/>
+    <classes>
+      <class name="script.Correctun">
+        <methods>
+          <include name="loginwithcorrectuser"/>
+        </methods>
+      </class> <!-- script.Correctun -->
+    </classes>
+  </test> <!-- Correctun(failed) -->
+  <test thread-count="5" name="Bothcrrct(failed)" verbose="2">
+    <parameter name="Username" value="sylix"/>
+    <parameter name="Password" value="admin"/>
+    <classes>
+      <class name="script.Bothcrrct">
+        <methods>
+          <include name="loginwithbothcrt"/>
+        </methods>
+      </class> <!-- script.Bothcrrct -->
+    </classes>
+  </test> <!-- Bothcrrct(failed) -->
+  <test thread-count="5" name="Bothincorrr(failed)" verbose="2">
+    <parameter name="Username" value="noda"/>
+    <parameter name="Password" value="hello"/>
+    <classes>
+      <class name="script.Bothincorrr">
+        <methods>
+          <include name="loginwithbothincrt"/>
+        </methods>
+      </class> <!-- script.Bothincorrr -->
+    </classes>
+  </test> <!-- Bothincorrr(failed) -->
+</suite> <!-- Failed suite [Login] -->
